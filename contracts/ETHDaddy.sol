@@ -44,8 +44,8 @@ contract ETHDaddy is ERC721{
 
         unchecked {
             ++s_DomainCounter;
-            s_ListingOwnersCost[msg.sender] = s_ListingOwnersCost[msg.sender] + _cost;
         }
+        s_ListingOwnersCost[msg.sender] = s_ListingOwnersCost[msg.sender] + _cost;
 
     }
 
